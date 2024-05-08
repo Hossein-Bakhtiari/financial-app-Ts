@@ -1,5 +1,11 @@
+import Navbar from "./sections/Navbar";
+
 function App() {
-  return <h1 className="bg-black text-white">title</h1>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
 
 export default App;
