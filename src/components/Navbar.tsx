@@ -21,13 +21,13 @@ function Navbar() {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="flex h-[15vh] max-w-7xl items-center justify-between px-8 xl:m-auto lg:px-12">
+          <div className="flex h-[15vh] max-w-7xl items-center justify-between px-8 xl:m-auto lg:px-12 ">
             <div className="flex">
               <ButtonLink
                 href="#"
                 children={<img src={Kobodrop} alt="Kobodrop logo" />}
               />
-              <div className="ml-4 hidden items-center  space-x-4 sm:flex ">
+              <div className="ml-4 hidden items-center  space-x-4 sm:flex lg:ml-8 lg:space-x-8 ">
                 {navLinks.map((link, index) => (
                   <ButtonLink
                     key={index}
@@ -71,5 +71,6 @@ function Navbar() {
     </Disclosure>
   );
 }
+
 
 export default Navbar;
